@@ -1,0 +1,68 @@
+@media -moz-pref('browser.nova.enabled') {
+    :root {
+        --chrome-content-separator-color: unset !important;
+        --chrome-window-gap: 0px !important;
+        --tab-margin-block: 0 !important;
+        --tab-min-height: 36px !important;
+        --urlbar-border-radius: 2px !important;
+    }
+
+    #browser {
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    #navigator-toolbox {
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    #tabbrowser-tabbox {
+        border-radius: 0 !important;
+    }
+
+    #nav-bar {
+        border-top: none !important;
+    }
+
+    #tabbrowser-tabpanels > :not(.split-view-panel) .browserContainer {
+        border-radius: 0 !important;
+    }
+
+    .tab-background {
+        border-radius: 3px 3px 0px 0px !important;
+    }
+
+    #tabs-newtab-button:hover,
+    #tabs-newtab-button:hover:active,
+    #tabs-newtab-button:hover > .toolbarbutton-icon {
+        border-radius: 3px 3px 0px 0px !important;
+    }
+    
+    .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+        margin: 0 0 0 !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+    
+    .tabbrowser-tab {
+        margin-inline: -2px !important;
+    }
+    
+    .tabbrowser-tab:hover .tab-close-button {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .tab-close-button:hover {
+        border-radius: 2px !important;
+    }
+    
+    .toolbarbutton-1:hover,
+    .toolbarbutton-1:hover > .toolbarbutton-icon,
+    .toolbarbutton-1:hover > .toolbarbutton-badge-stack,
+    .toolbarbutton-1:hover .toolbarbutton-badge-stack > .toolbarbutton-icon {
+        border-radius: 2px !important;
+    }
+}
